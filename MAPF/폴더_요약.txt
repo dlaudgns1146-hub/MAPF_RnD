@@ -1,0 +1,39 @@
+MAPF연구개발_인용자료&기록자료 폴더 요약
+작성일: 2026-07-13
+
+■ 폴더 최상위 구성
+
+1. 시뮬레이션 결과 영상 (mp4, 총 10개)
+   - Helper_MAPF-PIBT_90agent.mp4
+     PIBT 알고리즘 기반, 90개 에이전트 시뮬레이션
+   - Helper_MAPF-RHCR(CBS(A_star))_20agent.mp4
+   - Helper_MAPF-RHCR(CBS(A_star))_20agent_124만_800througoutput.mp4
+   - Helper_MAPF-RHCR(CBS(A_star))_20agent_fast.mp4
+   - Helper_MAPF-RHCR(CBS(A_star))_40agent.mp4
+     RHCR(Rolling-Horizon Collision Resolution) + CBS(A*) 기반, 20/40 에이전트 시뮬레이션 (기본/고속/처리량 비교 버전 포함)
+   - MAPF-only_A_star.mp4
+     순수 A* 기반 MAPF 시뮬레이션
+   - Topology MAPF Simulator 2026-07-02 18-32-36.mp4
+   - Topology MAPF Simulator_Astar.mp4
+   - Topology MAPF Simulator_WHCA_STAR.mp4
+     자체 개발 "Topology MAPF Simulator"의 A*, WHCA* 알고리즘 비교 실행 영상
+
+2. mapf_cbs_simulator_2.py
+   - CBS(Conflict-Based Search) 기반 MAPF 시뮬레이터 (tkinter GUI, 780줄)
+   - 최대 99대 로봇 지원, 자동 모드(로봇이 목적지 도착 시 즉시 재계획) 구현
+
+3. MAPF기술조사/ (인용 논문·자료 모음)
+   - 공통 참고문헌 5편: Cooperative Pathfinding, AGV 지능형 에이전트 제어, Lifelong MAPF 캐시 메커니즘, Lifelong MAPF 확장 연구과제, 다중로봇 충돌회피(Velocity Obstacle) 등
+
+   - [준서]물류 공장 모바일 로봇 관제 및 트래픽 컨트롤 기술 조사/
+     종합 조사 보고서 1편 + 인용 논문 7편
+     (MAPF 기반 실내배송로봇 군집제어, 속도 프로파일 고려 경로탐색, AMR 비상정지 제어, 작업자 궤적예측, 로봇 군집 합의 알고리즘, AMR 버퍼 저장/회수 문제, 생체모방 트래픽 패턴 등)
+
+   - [태일]ACS기술조사/
+     기술조사 보고서(260406_ACS기술조사.docx) + 인용 논문 5편
+     (대규모 창고 Lifelong MAPF, 자율이동로봇 인트라로지스틱스 문헌리뷰, PIBT 백트래킹 기법, 강화학습 기반 혼잡회피 경로계획, MAPF 기반 실내배송로봇 군집제어)
+
+   - 기타: Trajectory-Level Post-optimization for MAPF via Closed Subwalk Collapsing 논문 1편
+
+■ 요약
+본 폴더는 MAPF(Multi-Agent Path Finding, 다중 에이전트 경로탐색) 연구개발 관련 자료로, (1) CBS/A*/PIBT/WHCA* 등 다양한 알고리즘의 시뮬레이션 실행 영상, (2) 직접 개발한 CBS 시뮬레이터 파이썬 코드, (3) 물류창고·AMR/AGV 관제 및 트래픽 컨트롤 관련 인용 논문·기술조사 보고서로 구성되어 있음.
